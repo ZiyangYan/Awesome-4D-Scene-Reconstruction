@@ -48,11 +48,61 @@ If you have suggestions for new resources, improvements to methodologies, or cor
 ### NeRF-based Reconstruction
 
 | Section | Method | Venue | Scenario | 4D-style | Scene Encoding | Geometry Representation | Text | Flow | Normal | Segment. | Uncer. | Extra Prior | Link |
-|---------|--------|-------|----------|----------|----------------|------------------------|------|------|--------|----------|--------|------------|------|
-| NeRF-style | D-NeRF | CVPR2021 | indoor | Deformation fields | MLP | density |  |  |  |  |  |  | [D-NeRF: Neural Radiance Fields for Dynamic Scenes](https://openaccess.thecvf.com/content/CVPR2021/papers/Li_Neural_Scene_Flow_Fields_for_Space-Time_View_Synthesis_of_Dynamic_CVPR_2021_paper.pdf) |
-| NeRF-style | NSFF | CVPR2021 | outdoor | 4D NeRF | MLP | density |  | ✅ |  |  |  | RAFT | [Neural Scene Flow Fields](https://openaccess.thecvf.com/content/CVPR2021/papers/Li_Neural_Scene_Flow_Fields_for_Space-Time_View_Synthesis_of_Dynamic_CVPR_2021_paper.pdf) |
-| NeRF-style | Video-NeRF | CVPR2021 | outdoor | 4D NeRF | MLP | density |  |  |  |  |  |  | [Space-Time Neural Irradiance Fields](https://openaccess.thecvf.com/content/CVPR2021/papers/Xian_Space-Time_Neural_Irradiance_Fields_for_Free-Viewpoint_Video_CVPR_2021_paper.pdf) |
-| NeRF-style | NR-NeRF | CVPR2021 | outdoor | Deformation fields | MLP | density |  |  |  |  |  |  | [Non-Rigid Neural Radiance Fields](https://openaccess.thecvf.com/content/ICCV2021/papers/Tretschk_Non-Rigid_Neural_Radiance_Fields_Reconstruction_and_Novel_View_Synthesis_of_ICCV_2021_paper.pdf) |
+|---------|--------|-------|---------|----------|----------------|-----------------------|------|------|--------|----------|--------|------------|------|
+# 4D Dynamic Scene Reconstruction System Overview
+
+We categorize the different methods into **NeRF-style** and **3DGS-style** frameworks.
+
+## NeRF-style Methods
+
+| Section | Method | Venue | Scenario | 4D-style | Scene Encoding | Geometry Representation | Text | Flow | Normal | Segment. | Uncer. | Extra Prior | Link |
+|---------|--------|-------|---------|----------|----------------|------------------------|------|------|--------|----------|--------|------------|------|
+|         | D-NeRF | CVPR2021 | indoor | Deformation fields | MLP | density |  |  |  |  |  |  | [D-NeRF: Neural Radiance Fields for Dynamic Scenes](https://openaccess.thecvf.com/content/CVPR2021/papers/Li_Neural_Scene_Flow_Fields_for_Space-Time_View_Synthesis_of_Dynamic_CVPR_2021_paper.pdf) |
+|         | NSFF | CVPR2021 | outdoor | 4D NeRF | MLP | density |  | ✅ |  |  |  | RAFT | [NSFF Paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Li_Neural_Scene_Flow_Fields_for_Space-Time_View_Synthesis_of_Dynamic_CVPR_2021_paper.pdf) |
+|         | Video-NeRF | CVPR2021 | outdoor | 4D NeRF | MLP | density |  |  |  |  |  |  | [Video-NeRF Paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Xian_Space-Time_Neural_Irradiance_Fields_for_Free-Viewpoint_Video_CVPR_2021_paper.pdf) |
+|         | NR-NeRF | CVPR2021 | outdoor | Deformation fields | MLP | density |  |  |  |  |  |  | [NR-NeRF Paper](https://openaccess.thecvf.com/content/ICCV2021/papers/Tretschk_Non-Rigid_Neural_Radiance_Fields_Reconstruction_and_Novel_View_Synthesis_of_ICCV_2021_paper.pdf) |
+|         | STaR | CVPR2021 | indoor | Deformation fields | MLP | density |  |  |  |  |  |  | [STaR Paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Yuan_STaR_Self-Supervised_Tracking_and_Reconstruction_of_Rigid_Objects_in_Motion_CVPR_2021_paper.pdf) |
+|         | DynNeRF | ICCV2021 | outdoor | 4D NeRF | MLP | density |  | ✅ |  |  |  | RAFT | [DynNeRF Paper](https://arxiv.org/abs/2012.09790) |
+|         | NeRFlow | ICCV2021 | indoor | 4D NeRF | MLP | density |  | ✅ |  |  |  | Farneback G. | [NeRFlow Paper](https://arxiv.org/pdf/2012.09790) |
+|         | StreamRF | NIPS2022 | indoor | 4D feature volumes | voxel grid + MLP | density |  |  |  |  |  |  | [StreamRF Paper](https://arxiv.org/pdf/2210.14831) |
+|         | NDR | NIPS2022 | indoor | Deformation fields | MLP | density |  |  |  |  |  |  | [NDR Paper](https://proceedings.neurips.cc/paper_files/paper/2022/file/06a52a54c8ee03cd86771136bc91eb1f-Paper-Conference.pdf) |
+|         | DeVRF | NIPS2022 | indoor | 4D feature volumes | voxel grid + MLP | density |  | ✅ |  |  |  | RAFT | [DeVRF Paper](https://proceedings.neurips.cc/paper_files/paper/2022/file/eeb57fdf745eb31a3c7ef22c59a4661d-Paper-Conference.pdf) |
+|         | HexPlane | CVPR2023 | indoor | 4D feature volumes | feature plane+MLP | density |  |  |  |  |  |  | [HexPlane Paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Cao_HexPlane_A_Fast_Representation_for_Dynamic_Scenes_CVPR_2023_paper.pdf) |
+|         | K-Planes | CVPR2023 | indoor | 4D feature volumes | feature plane+MLP | density |  |  |  |  |  |  | [K-Planes Paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Fridovich-Keil_K-Planes_Explicit_Radiance_Fields_in_Space_Time_and_Appearance_CVPR_2023_paper.pdf) |
+|         | NeRF-DS | CVPR2023 | indoor | Deformation fields | MLP | density |  |  | ✅ |  |  |  | [NeRF-DS Paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Yan_NeRF-DS_Neural_Radiance_Fields_for_Dynamic_Specular_Objects_CVPR_2023_paper.pdf) |
+|         | SUDS | CVPR2023 | outdoor | 4D feature volumes | hash grid + MLP | density |  | ✅ |  |  |  | RAFT & DINO | [SUDS Paper](https://arxiv.org/pdf/2303.14536) |
+|         | robust-denrf | CVPR2023 | outdoor | Deformation fields | MLP | density |  | ✅ |  |  |  | RAFT | [robust-denrf Paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Liu_Robust_Dynamic_Radiance_Fields_CVPR_2023_paper.pdf) |
+|         | TIDNeRF | CVPR2023 | indoor | 4D feature volumes | hash grid + MLP | density |  |  |  |  |  |  | [TIDNeRF Paper](https://openaccess.thecvf.com/content/CVPR2023/papers/Park_Temporal_Interpolation_Is_All_You_Need_for_Dynamic_Neural_Radiance_CVPR_2023_paper.pdf) |
+| RoDynRF    | CVPR2023   | outdoor | 4D feature volumes | voxel grid + MLP    | density |    | ✔  |    |    |    | RAFT   | [link](https://robust-dynrf.github.io/) |
+| HyperReel  | CVPR2023   | indoor  | 4D feature volumes | feature planes + MLP | density |    |    |    |    |    |        | [link](https://arxiv.org/pdf/2301.02238) |
+| Total-Recon | ICCV2023  | indoor  | Deformation fields | MLP                 | SDF     |    | ✔  |    |    |    | VCN    | [link](https://openaccess.thecvf.com/content/ICCV2023/papers/Song_Total-Recon_Deformable_Scene_Reconstruction_for_Embodied_View_Synthesis_ICCV_2023_paper.pdf) |
+| MixVoxels  | ICCV2023   | outdoor | 4D feature volumes | voxel grid + MLP    | density |    |    |    |    |    |        | [link](https://openaccess.thecvf.com/content/ICCV2023/papers/Wang_Mixed_Neural_Voxels_for_Fast_Multi-view_Video_Synthesis_ICCV_2023_paper.pdf) |
+| MonoNeRF   | ICCV2023   | outdoor | 4D NeRF            | MLP                 | density |    | ✔  |    |    |    | RAFT   | [link](https://github.com/tianfr/MonoNeRF?tab=readme-ov-file) |
+| MSTH       | NIPS2023   | indoor  | 4D feature volumes | Hash-grid+MLP       | density |    |    |    |    |    | ✔      | [link](https://proceedings.neurips.cc/paper_files/paper/2023/file/df31126302921ca9351fab73923a172f-Paper-Conference.pdf) |
+| NVFi       | NIPS2023   | outdoor | 4D feature volumes | feature planes + MLP | density |    |    |    |    |    |        | [link](https://arxiv.org/pdf/2312.06398) |
+| NeRFPlayer | TVCG2023   | indoor  | 4D feature volumes | Hash-grid+MLP       | density |    |    |    |    |    |        | [link](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10049689) |
+| Sync-NeRF  | AAAI2024   | indoor  | 4D NeRF            | MLP                 | density |    |    |    |    |    |        | [link](https://github.com/seoha-kim/Sync-NeRF?tab=readme-ov-file) |
+| BLiRF      | AAAI2024   | indoor  | 4D feature volumes | MLP                 | density |    |    |    |    |    |        | [link](https://arxiv.org/pdf/2302.13543) |
+| Ced-NeRF        | AAAI2024   | indoor  | 4D feature volumes | Hash-grid+MLP       | density |    |    |    |    |    |        | [link](https://github.com/Linyou/Ced-NeRF) |
+| LiDAR4D         | CVPR2024   | outdoor | 4D feature volumes | hybrid + MLP        | density |    | ✔  |    |    |    | flow MLP | [link](https://openaccess.thecvf.com/content/CVPR2024/papers/Zheng_LiDAR4D_Dynamic_Neural_Fields_for_Novel_Space-time_View_LiDAR_Synthesis_CVPR_2024_paper.pdf) |
+| DaReNeRF        | CVPR2024   | indoor  | 4D feature volumes | feature plane+MLP   | density |    |    |    |    |    | MaskDWT | [link](https://openaccess.thecvf.com/content/CVPR2024/papers/Lou_DaReNeRF_Direction-aware_Representation_for_Dynamic_Scenes_CVPR_2024_paper.pdf) |
+| 4DNDF           | CVPR2024   | outdoor | 4D NeRF            | hash grid + MLP     | TSDF    |    |    |    | ✔  |    |        | [link](https://openaccess.thecvf.com/content/CVPR2024/papers/Zhong_3D_LiDAR_Mapping_in_Dynamic_Environments_using_a_4D_Implicit_CVPR_2024_paper.pdf) |
+| Gear-NeRF       | CVPR2024   | indoor  | 4D feature volumes | feature plane+MLP   | density |    |    |    | ✔  |    | SAM    | [link](https://openaccess.thecvf.com/content/CVPR2024/papers/Liu_Gear-NeRF_Free-Viewpoint_Rendering_and_Tracking_with_Motion-aware_Spatio-Temporal_Sampling_CVPR_2024_paper.pdf) |
+| NeuRAD          | CVPR2024   | outdoor | 4D feature volumes | hash grid + MLP     | SDF     |    |    |    |    |    |        | [link](https://openaccess.thecvf.com/content/CVPR2024/papers/Tonderski_NeuRAD_Neural_Rendering_for_Autonomous_Driving_CVPR_2024_paper.pdf) |
+| ml-nsg          | CVPR2024   | outdoor | 4D NeRF            | hash grid + MLP     | density |    |    |    |    |    |        | [link](https://openaccess.thecvf.com/content/CVPR2024/papers/Fischer_Multi-Level_Neural_Scene_Graphs_for_Dynamic_Urban_Environments_CVPR_2024_paper.pdf) |
+| S-DyRF          | CVPR2024   | indoor  | 4D feature volumes | feature plane + MLP | density |    |    |    |    |    |        | [link](https://openaccess.thecvf.com/content/CVPR2024/papers/Li_S-DyRF_Reference-Based_Stylized_Radiance_Fields_for_Dynamic_Scenes_CVPR_2024_paper.pdf) |
+| DyBluRF         | CVPR2024   | outdoor | Deformation fields | MLP                 | density |    | ✔  |    |    |    | RAFT   | [link](http://arxiv.org/abs/2403.10103) |
+| RoDUS           | ECCV2024   | outdoor | 4D feature volumes | hash grid + MLP     | density |    | ✔  |    | ✔  |    |        | [link](https://arxiv.org/pdf/2403.09419) |
+| EmerNeRF        | ICLR2024   | outdoor | 4D feature volumes | Hash-grid+MLP       | density |    | ✔  |    |    |    | DINOv2 | [link](https://arxiv.org/pdf/2311.02077) |
+| OTNeRF          | ICLR2024   | indoor  | Temporal prior     | MLP                 | density |    |    |    |    |    |        | [link](https://www.amazon.science/publications/improving-the-convergence-of-dynamic-nerfs-via-optimal-transport) |
+| SLS4D           | TVCG2024   | indoor  | 4D feature volumes | hybrid + MLP        | density |    |    |    |    |    |        | [link](https://arxiv.org/pdf/2312.09743) |
+| DecouplingNeRF  | TVCG2024   | indoor  | 4D NeRF            | MLP                 | density |    | ✔  |    |    |    | NSFF   | [link](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10612248&casa_token=ydXuNDBnXkAAAAAA:1dW8yHbOb4a7p7uUZqv2W-_2vayrcDr3z_1LYQ28DkgSZAFvaJPRL5-rYZZZEjGzPaj-UVw) |
+| STGC-NeRF       | AAAI2025   | outdoor | Temporal prior     | Hier. features+MLP  | density |    | ✔  | ✔  |    |    | GMSF   | [link](https://github.com/PSYZ1234/STGC-NeRF) |
+| DetNeRF         | AAAI2025   | outdoor | 4D NeRF            | MLP                 | density |    | ✔  |    |    |    | RAFT   | [link](https://arxiv.org/abs/2301.00411) |
+
+
+
+
 
 
 ### Optimization-based Generation
