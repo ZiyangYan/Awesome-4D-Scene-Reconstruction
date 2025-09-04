@@ -3,14 +3,12 @@
 [![Awesome Logo](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 ![Counter](https://api.infinitescript.com/badgen/count?name=hzxie/awesome/SceneGen)
 [![arXiv](https://img.shields.io/badge/arXiv-2505.05474-b31b1b.svg)](https://arxiv.org/abs/2505.05474)
-[![YouTube](https://img.shields.io/badge/Spotlight%20Video-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtu.be/I_tWObgex58)
-[![PR's Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://github.com/hzxie/Awesome-3D-Scene-Generation/pulls)
 
 # Overview
 
-This repository collects summaries of over 300 recent studies on 3D scene generation, along with the downstream applications, and will be continuously updated.
+This repository collects summaries of over xxx recent studies on NeRF- or GS-based 4D scene reconstruction, along with the downstream applications, and will be continuously updated.
 
-If you have suggestions for new resources, improvements to methodologies, or corrections for broken links, please don't hesitate to open an [issue](https://github.com/hzxie/Awesome-3D-Scene-Generation/issues) or submit a [pull request](https://github.com/hzxie/Awesome-3D-Scene-Generation/pulls). Contributions of all kinds are welcome and greatly appreciated.
+If you have suggestions for new resources, improvements to methodologies, or corrections for broken links, please don't hesitate to open an [issue]([https://github.com/ZiyangYan/Awesome-4D-Scene-Reconstruction/issues]) or submit a [pull request](https://github.com/hzxie/Awesome-4D-Scene-Reconstruction/pulls). Contributions of all kinds are welcome and greatly appreciated.
 
 ![3D-Scene-Generation-Teaser](https://github.com/user-attachments/assets/41426339-a95d-4c0c-9a69-b0f5e8953314)
 
@@ -47,50 +45,15 @@ If you have suggestions for new resources, improvements to methodologies, or cor
 
 ## Procedural Generation
 
-### Rule-based Generation
+### NeRF-based Reconstruction
 
-| Year | Venue | Acronym | Paper | Project | Repo@GitHub |
-|------|-------|---------|-------|---------|-------------|
-| 1988 | SIGGRAPH |  | [Terrain simulation using a model of stream erosion](https://doi.org/10.1145/378456.378519) |  |  |
-| 1989 | SIGGRAPH |  | [The synthesis and rendering of eroded fractal terrains](https://doi.org/10.1145/74334.74337) |  |  |
-| 1993 | Graphics Interface |  | [A fractal model of mountains and rivers](https://doi.org/10.20380/GI1993.26) | [![link](https://img.shields.io/badge/Website-9cf)](https://algorithmicbotany.org/papers/mountains.gi93.html) |  |
-| 1998 | SIGGRAPH |  | [Realistic modeling and rendering of plant ecosystems](https://doi.org/10.1145/280814.280898) | [![link](https://img.shields.io/badge/Website-9cf)](https://algorithmicbotany.org/papers/ecosys.sig98.html) |  |
-| 2001 | SIGGRAPH | CityEngine | [Procedural modeling of cities](https://doi.org/10.1145/383259.383292) |  |  |
-| 2005 | VRST |  | [Modeling Landscapes with Ridges and Rivers](https://doi.org/10.1145/1101616.1101648) |  |  |
-| 2006 | TOG |  | [Procedural modeling of buildings](https://doi.org/10.1145/1141911.1141931) |  |  |
-| 2007 | GDTW | Citygen | [Citygen: An Interactive System for Procedural City Generation](https://www.citygen.net/files/citygen_gdtw07.pdf) | [![link](https://img.shields.io/badge/Website-9cf)](https://www.citygen.net/2007/12/GDTW-Paper) |  |
-| 2007 | I3D |  | [Example-based model synthesis](https://doi.org/10.1145/1230100.1230119) | [![link](https://img.shields.io/badge/Website-9cf)](https://paulmerrell.org/model-synthesis) | [![GitHub](https://img.shields.io/github/stars/merrell42/model-synthesis)](https://github.com/merrell42/model-synthesis) |
-| 2007 | TVCG |  | [Terrain Synthesis from Digital Elevation Models](https://doi.org/10.1109/TVCG.2007.1027) | [![link](https://img.shields.io/badge/Website-9cf)](http://terrainsynthesis.org/) |  |
-| 2008 | CGF |  | [Real-Time Rendering and Editing of Vector-based Terrains](https://doi.org/10.1111/j.1467-8659.2008.01128.x) | [![link](https://img.shields.io/badge/Website-9cf)](https://hal.science/inria-00207679) |  |
-| 2008 | TOG |  | [Continuous model synthesis](https://doi.org/10.1145/1409060.1409111) | [![link](https://img.shields.io/badge/Website-9cf)](http://gamma.cs.unc.edu/synthesis/) |  |
-| 2008 | TOG |  | [Interactive Procedural Street Modeling](https://doi.org/10.1145/1360612.1360702) | [![link](https://img.shields.io/badge/Website-9cf)](https://www.sci.utah.edu/~chengu/street_sig08/street_project.htm) |  |
-| 2009 | CGF |  | [Arches: a Framework for Modeling Complex Terrains](https://doi.org/10.1111/j.1467-8659.2009.01385.x) |  |  |
-| 2009 | CGF |  | [Interactive Geometric Simulation of 4D Cities](https://doi.org/10.1111/j.1467-8659.2009.01387.x) |  |  |
-| 2009 | TOG |  | [Interactive design of urban spaces using geometrical and behavioral modeling](https://doi.org/10.1145/1618452.1618457) | [![youtube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=youtube)](https://youtu.be/iR-UObGJ2Gs) |  |
-| 2010 | CGF |  | [Procedural Generation of Roads](https://doi.org/10.1111/j.1467-8659.2009.01612.x) |  |  |
-| 2011 | CGF |  | [Interactive Modeling of City Layouts using Layers of Procedural Content](https://doi.org/10.1111/j.1467-8659.2011.01865.x) |  |  |
-| 2011 | SI3D |  | [Urban Ecosystem Design](https://doi.org/10.1145/1944745.1944773) |  |  |
-| 2011 | TOG |  | [Metropolis procedural modeling](https://doi.org/10.1145/1944846.1944851) | [![link](https://img.shields.io/badge/Website-9cf)](https://vladlen.info/publications/metropolis-procedural-modeling/) |  |
-| 2012 | CGF |  | [Procedural Generation of Parcels in Urban Modeling](https://doi.org/10.1111/j.1467-8659.2012.03047.x) |  |  |
-| 2012 | TOG |  | [Inverse design of urban procedural models](https://doi.org/10.1145/2366145.2366187) | [![link](https://img.shields.io/badge/Website-9cf)](http://www.ignaciogarciadorado.com/p/2012_SIGA/2012_SIGA.html) |  |
-| 2013 | TOG |  | [Terrain Generation Using Procedural Models Based on Hydrology](https://doi.org/10.1145/2461912.2461996) | [![youtube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=youtube&)](https://youtu.be/JCsj0v-wmIM) |  |
-| 2013 | TOG | Urban Pattern | [Urban Pattern: Layout Design by Hierarchical Domain Splitting](https://doi.org/10.1145/2508363.2508405) | [![link](https://img.shields.io/badge/Website-9cf)](https://www.yongliangyang.net/projects/sitelayout/urbanpattern_siga13.html) |  |
-| 2015 | TOG | WorldBrush | [WorldBrush: Interactive Example-Based Synthesis of Procedural Virtual Worlds](https://doi.org/10.1145/2766975) | [![link](https://img.shields.io/badge/Website-9cf)](https://team.inria.fr/imagine/worldbrush-interactive-example-based-synthesis-of-procedural-virtual-worlds/) |  |
-| 2016 | CGF |  | [Example-Driven Procedural Urban Roads](https://doi.org/10.1111/cgf.12728) |  |  |
-| 2016 | 3DV |  | [Proceduralization for Editing 3D Architectural Models](https://doi.org/10.1109/3DV.2016.28) |  |  |
-| 2016 | TOG |  | [Interactive Sketching of Urban Procedural Models](https://doi.org/10.1145/2897824.2925951) | [![link](https://img.shields.io/badge/Website-9cf)](https://www.ignaciogarciadorado.com/p/2016_TOG/2016_TOG.html) |  |
-| 2017 | TOG |  | [Authoring landscapes by combining ecosystem and terrain erosion simulation](https://doi.org/10.1145/3072959.3073667) |  |  |
-| 2017 | TOG |  | [Fast Weather Simulation for Inverse Procedural Design of 3D Urban Models](https://doi.org/10.1145/2999534) | [![link](https://img.shields.io/badge/Website-9cf)](https://www.ignaciogarciadorado.com/p/2017_TOG/2017_TOG.html) | [![GitHub](https://img.shields.io/github/stars/igarciad/weather_simulation)](https://github.com/igarciad/weather_simulation) |
-| 2017 | TOG |  | [Interactive Example-Based Terrain Authoring with Conditional Generative Adversarial Networks](https://doi.org/10.1145/3130800.3130804) | [![link](https://img.shields.io/badge/Website-9cf)](https://www.cs.purdue.edu/cgvlab/www/publications/guerin2017interactive/) |  |
-| 2019 | TOG |  | [Synthetic Silviculture: Multi-scale Modeling of Plant Ecosystems](https://doi.org/10.1145/3306346.3323039) | [![link](https://img.shields.io/badge/Website-9cf)](https://storage.googleapis.com/pirk.io/projects/synthetic_silviculture/index.html) |  |
-| 2021 | TOG |  | [Authoring Consistent Landscapes with Flora and Fauna](https://doi.org/10.1145/3450626.3459952) | [![link](https://img.shields.io/badge/Website-9cf)](https://www-sop.inria.fr/reves/Basilic/2021/ECCMMBC21/)  |  |
-| 2022 | TOG | Ecoclimates | [Ecoclimates: Climate-Response Modeling of Vegetation](https://doi.org/10.1145/3528223.3530146) | [![link](https://img.shields.io/badge/Website-9cf)](https://storage.googleapis.com/pirk.io/projects/ecoclimates/) |  |
-| 2022 | TOG |  | [Procedural Urban Forestry](https://arxiv.org/abs/2008.05567) | [![link](https://img.shields.io/badge/Website-9cf)](https://www.cs.purdue.edu/cgvlab/www/publications/Niese2022ToG/) |  |
-| 2023 | CVPR | Infinigen | [Infinite Photorealistic Worlds using Procedural Generation](https://arxiv.org/abs/2306.09310) | [![link](https://img.shields.io/badge/Website-9cf)](https://infinigen.org/) | [![GitHub](https://img.shields.io/github/stars/princeton-vl/infinigen)](https://github.com/princeton-vl/infinigen) |
-| 2023 | TOG |  | [Forming Terrains by Glacial Erosion](https://doi.org/10.1145/3592422) | [![link](https://img.shields.io/badge/Website-9cf)](https://www-sop.inria.fr/reves/Basilic/2023/CJPBCBGGG23/) |  |
-| 2023 | TOG |  | [Large-scale terrain authoring through interactive erosion simulation](https://doi.org/10.1145/3592787) | [![youtube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=youtube&)](https://youtu.be/gCP7jzcPLyQ) | [![GitHub](https://img.shields.io/github/stars/H-Schott/StreamPowerErosion)](https://github.com/H-Schott/StreamPowerErosion) |
-| 2023 | TOG |  | [Authoring and Simulating Meandering Rivers](https://doi.org/10.1145/3618350) | [![link](https://img.shields.io/badge/Website-9cf)](https://aparis69.github.io/public_html/projects/paris2023_Meanders.html) | [![GitHub](https://img.shields.io/github/stars/aparis69/Meandering-rivers)](https://aparis69.github.io/public_html/projects/paris2023_Meanders.html) |
-| 2025 | CVPRW | Proc-GS | [Proc-GS: Procedural Building Generation for City Assembly with 3D Gaussians](https://arxiv.org/abs/2412.07660) | [![link](https://img.shields.io/badge/Website-9cf)](https://city-super.github.io/procgs/) | [![GitHub](https://img.shields.io/github/stars/city-super/ProcGS?style=social)](https://github.com/city-super/ProcGS/) |
+| Section | Method | Venue | Scenario | 4D-style | Scene Encoding | Geometry Representation | Text | Flow | Normal | Segment. | Uncer. | Extra Prior | Link |
+|---------|--------|-------|----------|----------|----------------|------------------------|------|------|--------|----------|--------|------------|------|
+| NeRF-style | D-NeRF | CVPR2021 | indoor | Deformation fields | MLP | density |  |  |  |  |  |  | [D-NeRF: Neural Radiance Fields for Dynamic Scenes](https://openaccess.thecvf.com/content/CVPR2021/papers/Li_Neural_Scene_Flow_Fields_for_Space-Time_View_Synthesis_of_Dynamic_CVPR_2021_paper.pdf) |
+| NeRF-style | NSFF | CVPR2021 | outdoor | 4D NeRF | MLP | density |  | ✅ |  |  |  | RAFT | [Neural Scene Flow Fields](https://openaccess.thecvf.com/content/CVPR2021/papers/Li_Neural_Scene_Flow_Fields_for_Space-Time_View_Synthesis_of_Dynamic_CVPR_2021_paper.pdf) |
+| NeRF-style | Video-NeRF | CVPR2021 | outdoor | 4D NeRF | MLP | density |  |  |  |  |  |  | [Space-Time Neural Irradiance Fields](https://openaccess.thecvf.com/content/CVPR2021/papers/Xian_Space-Time_Neural_Irradiance_Fields_for_Free-Viewpoint_Video_CVPR_2021_paper.pdf) |
+| NeRF-style | NR-NeRF | CVPR2021 | outdoor | Deformation fields | MLP | density |  |  |  |  |  |  | [Non-Rigid Neural Radiance Fields](https://openaccess.thecvf.com/content/ICCV2021/papers/Tretschk_Non-Rigid_Neural_Radiance_Fields_Reconstruction_and_Novel_View_Synthesis_of_ICCV_2021_paper.pdf) |
+
 
 ### Optimization-based Generation
 
