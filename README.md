@@ -108,7 +108,7 @@ We categorize the different methods into **NeRF-style** and **3DGS-style** frame
 ### GS-based Reconstruction
 
 | Method | Venue | Scenario | 4D-style | Scene Encoding | Geometry Representation | Text | Flow | Normal | Segment. | Uncer. | Extra Prior | Link |
-|------|-------|---------|-------|---------|-------------|
+|--------|-------|---------|----------|----------------|------------------------|------|------|--------|----------|--------|------------|------|
 | ST-4DGS         | ACM SIGGRAPH 2024 | in.&out. |                | Gaussian Splatting | Density |    |    |    |    |    |                     | [link](https://github.com/wanglids/ST-4DGS) |
 | SaRO-GS         | ACM MM2024      | indoor |                | Gaussian Splatting | Density |    |    |    |    |    |                     | [link](https://dl.acm.org/doi/pdf/10.1145/3664647.3681463) |
 | GaussianFlow     | CVPR2024       | indoor |                | Gaussian Splatting | Density |    | ✔  |    |    |    | Videoflow           | [link](https://zerg-overmind.github.io/GaussianFlow.github.io/) |
