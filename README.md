@@ -43,17 +43,12 @@ If you have suggestions for new resources, improvements to methodologies, or cor
 
 # Methods: A Hierarchical Taxonomy
 
-## Procedural Generation
 
-### NeRF-based Reconstruction
-
-| Section | Method | Venue | Scenario | 4D-style | Scene Encoding | Geometry Representation | Text | Flow | Normal | Segment. | Uncer. | Extra Prior | Link |
-|---------|--------|-------|---------|----------|----------------|-----------------------|------|------|--------|----------|--------|------------|------|
 # 4D Dynamic Scene Reconstruction System Overview
 
-We categorize the different methods into **NeRF-style** and **3DGS-style** frameworks.
+We categorize the different methods into **NeRF-style** and **GS-style** frameworks.
 
-## NeRF-style Methods
+### NeRF-based Reconstruction
 
 | Section | Method | Venue | Scenario | 4D-style | Scene Encoding | Geometry Representation | Text | Flow | Normal | Segment. | Uncer. | Extra Prior | Link |
 |---------|--------|-------|---------|----------|----------------|------------------------|------|------|--------|----------|--------|------------|------|
