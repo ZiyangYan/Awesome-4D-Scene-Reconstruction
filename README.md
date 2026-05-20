@@ -6,11 +6,11 @@
 
 # Overview
 
-This repository collects summaries of over xxx recent studies on NeRF- or GS-based 4D scene reconstruction, along with the downstream applications, and will be continuously updated.
+This repository collects summaries of over 100 recent studies on NeRF- or GS-based 4D scene reconstruction, along with the downstream applications, and will be continuously updated.
 
 If you have suggestions for new resources, improvements to methodologies, or corrections for broken links, please don't hesitate to open an [issue]([https://github.com/ZiyangYan/Awesome-4D-Scene-Reconstruction/issues]) or submit a [pull request](https://github.com/hzxie/Awesome-4D-Scene-Reconstruction/pulls). Contributions of all kinds are welcome and greatly appreciated.
 
-![3D-Scene-Generation-Teaser](https://github.com/user-attachments/assets/41426339-a95d-4c0c-9a69-b0f5e8953314)
+![4D-Scene-Reconstruction-Teaser](https://github.com/user-attachments/assets/4d_reconstruction_history.png)
 
 ### Table of Contents
 
@@ -34,12 +34,6 @@ If you have suggestions for new resources, improvements to methodologies, or cor
     - [Indoor Datasets](#indoor-datasets)
     - [Natural Datasets](#natural-datasets)
     - [Urban Datasets](#urban-datasets)
-- [Applications and Tasks](#applications-and-tasks)
-  - [3D Scene Editing](#3d-scene-editing)
-  - [Human-Scene Interaction](#human-scene-interaction)
-  - [Embodied AI](#embodied-ai)
-  - [Robotics](#robotics)
-  - [Autonomous Driving](#autonomous-driving)
 
 # Methods: A Hierarchical Taxonomy
 
@@ -174,6 +168,7 @@ We categorize the different methods into **NeRF-style** and **GS-style** framewo
 | Year | Type  | Source  | Acronym | Paper   | Project     |
 |------|-------|---------|---------|---------|-------------|
 
+
 ## Natural Datasets
 
 | Year | Type  | Source  | Acronym | Paper   | Project     |
@@ -185,29 +180,4 @@ We categorize the different methods into **NeRF-style** and **GS-style** framewo
 | Year | Type  | Source  | Acronym | Paper   | Project     |
 |------|-------|---------|---------|---------|-------------|
 
-
-# Applications and Tasks
-
-## 3D Scene Editing
-
-| Year | Venue | Acronym | Paper | Project | Repo@GitHub |
-|------|-------|---------|-------|---------|-------------|
-
-
-## Embodied AI
-
-| Year | Venue | Acronym | Paper | Project | Repo@GitHub |
-|------|-------|---------|-------|---------|-------------|
-
-
-## Robotics
-
-| Year | Venue | Acronym | Paper | Project | Repo@GitHub |
-|------|-------|---------|-------|---------|-------------|
-
-
-## Autonomous Driving
-
-| Year | Venue | Acronym | Paper | Project | Repo@GitHub |
-|------|-------|---------|-------|---------|-------------|
 
