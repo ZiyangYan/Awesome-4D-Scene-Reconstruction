@@ -167,7 +167,7 @@ We categorize the different methods into **NeRF-style** and **GS-style** framewo
 
 | Name | Scene Type | Sensor Setup | Resolution | Frame Rate  | Scene/Seq  | Temporal Scale|
 |------|-------|---------|---------|---------|-------------|-------------|
-|D-NeRF|Indoor|1 Cam | 800×800 |- |8| 50–200 frames|
+| D-NeRF | Indoor | 1 Cam | 800×800 | - | 8 | 50–200 frames|
 
 
 ## Real-world: Monocular & Sparse View
