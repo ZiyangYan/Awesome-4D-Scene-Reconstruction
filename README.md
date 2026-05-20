@@ -163,21 +163,27 @@ We categorize the different methods into **NeRF-style** and **GS-style** framewo
 
 # Datasets
 
-## Indoor Datasets
+## Synthetic Datasets (Ground Truth Geometry/Motion)
 
-| Year | Type  | Source  | Acronym | Paper   | Project     |
-|------|-------|---------|---------|---------|-------------|
-
-
-## Natural Datasets
-
-| Year | Type  | Source  | Acronym | Paper   | Project     |
-|------|-------|---------|---------|---------|-------------|
+| Name | Scene Type | Sensor Setup | Resolution | Frame Rate  | Scene/Seq  | Temporal Scale |
+|D-NeRF|Indoor|1 Cam | 800×800 |- |8| 50–200 frames|
 
 
-## Urban Datasets
+## Real-world: Monocular & Sparse View
 
-| Year | Type  | Source  | Acronym | Paper   | Project     |
-|------|-------|---------|---------|---------|-------------|
+| Name | Scene Type | Sensor Setup | Resolution | Frame Rate  | Scene/Seq  | Temporal Scale |
+|------|-------|---------|---------|---------|-------------|-------------|
+
+
+## Real-world: Dense Multi-view & Human-Centric
+
+| Name | Scene Type | Sensor Setup | Resolution | Frame Rate  | Scene/Seq  | Temporal Scale |
+|------|-------|---------|---------|---------|-------------|-------------|
+
+## Real-world: Long Horizon & Multimodal
+
+| Name | Scene Type | Sensor Setup | Resolution | Frame Rate  | Scene/Seq  | Temporal Scale |
+|------|-------|---------|---------|---------|-------------|-------------|
+
 
 
