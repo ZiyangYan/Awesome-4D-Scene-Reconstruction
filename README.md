@@ -165,50 +165,50 @@ We categorize the different methods into **NeRF-style** and **GS-style** framewo
 
 ## Synthetic Datasets (Ground Truth Geometry/Motion)
 
-|  Name  | Scene Type | Sensor Setup | Resolution | Frame Rate | Scene/Seq | Temporal Scale |
-|:------:|:-----------:|:-------------:|:----------:|:----------:|:---------:|:--------------:|
-| D-NeRF | Indoor | 1 Cam | 800×800 | - | 8 | 50–200 frames |
-| ParticleNeRF | Indoor | 40 Cam | - | - | 6 | - |
-| SS3DM | Autonomous Driving | 6 Cams + 5 LiDAR | - | 10 FPS | 28 | 13K frames |
+|  Name  | Scene Type | Sensor Setup | Resolution | Frame Rate | Scene/Seq | Temporal Scale | Link |
+|:------:|:-----------:|:-------------:|:----------:|:----------:|:---------:|:--------------:|:--------------:|
+| D-NeRF | Indoor | 1 Cam | 800×800 | - | 8 | 50–200 frames | [link](https://www.albertpumarola.com/research/D-NeRF/index.html) |
+| ParticleNeRF | Indoor | 40 Cam | - | - | 6 | - | [link](https://zenodo.org/records/7784157) |
+| SS3DM | Autonomous Driving | 6 Cams + 5 LiDAR | - | 10 FPS | 28 | 13K frames | [link](https://huggingface.co/datasets/SS3DM/SS3DM-Benchmark-example/tree/main) |
 
 
 ## Real-world: Monocular & Sparse View
 
-| Name | Scene Type | Sensor Setup | Resolution | Frame Rate | Scene/Seq | Temporal Scale |
-|:----:|:-----------:|:-------------:|:----------:|:----------:|:---------:|:--------------:|
-| DAVIS | Outdoor | 1 Cam | - | - | 150 | 10k frames total |
-| HyperNeRF | Indoor/Outdoor | 1–2 Cams | 540×960 | 15 FPS | 17 | 8–15s/seq |
-| DyCheck | Indoor | 1 iPhone + 7 Static | - | - | 14 | 200–500 frames |
-| Stereo4D | Indoor/Outdoor | 2 Cams | Diverse | - | 200K clips | - |
-| NeRF-DS | Outdoor | 2 Cams | - | - | 8 | - |
+| Name | Scene Type | Sensor Setup | Resolution | Frame Rate | Scene/Seq | Temporal Scale | Link |
+|:----:|:-----------:|:-------------:|:----------:|:----------:|:---------:|:--------------:|:--------------:|
+| DAVIS | Outdoor | 1 Cam | - | - | 150 | 10k frames total | [link](https://davischallenge.org/) |
+| HyperNeRF | Indoor/Outdoor | 1–2 Cams | 540×960 | 15 FPS | 17 | 8–15s/seq | [link](https://github.com/google/hypernerf/releases/tag/v0.1) |
+| DyCheck | Indoor | 1 iPhone + 7 Static | - | - | 14 | 200–500 frames | [link](https://drive.google.com/drive/folders/1bjGw6NMxJAanoAyIBC1xvJJDUGM61LvU) |
+| Stereo4D | Indoor/Outdoor | 2 Cams | Diverse | - | 200K clips | - | [link](https://github.com/Stereo4d/stereo4d-code) |
+| NeRF-DS | Outdoor | 2 Cams | - | - | 8 | - | [link](https://github.com/JokerYan/NeRF-DS/releases/tag/v0.1-pre-release) |
 
 ---
 
 ## Real-world: Dense Multi-view & Human-Centric
 
-| Name | Scene Type | Sensor Setup | Resolution | Frame Rate | Scene/Seq | Temporal Scale |
-|:----:|:-----------:|:-------------:|:----------:|:----------:|:---------:|:--------------:|
-| Panoptic Studio | Indoor | 480 Cams | - | - | 5 | - |
-| ENeRF-Outdoor | Outdoor | 18 Cams | - | - | 3 | 1200 frames |
-| Neu3DV | Indoor | 18–21 Cams | 2704×2028 | 30 FPS | 6 | 10s/seq |
-| Technicolor | Indoor (RGB-only) | 16 Cams | 2048×1088 | 25 FPS | 12 | - |
-| NVIDIA Dynamic | Outdoor | 12 Cams | - | - | 7 | 90–200 frames |
-| Meeting Room | Indoor | 13 Cams | 1280×720 | 30 FPS | 3 | 300 frames |
-| Google Immersive | Indoor/Outdoor | ≤46 Cams | - | - | 15 | - |
+| Name | Scene Type | Sensor Setup | Resolution | Frame Rate | Scene/Seq | Temporal Scale | Link |
+|:----:|:-----------:|:-------------:|:----------:|:----------:|:---------:|:--------------:|:--------------:|
+| Panoptic Studio | Indoor | 480 Cams | - | - | 5 | - | [link](https://domedb.perception.cs.cmu.edu/) |
+| ENeRF-Outdoor | Outdoor | 18 Cams | - | - | 3 | 1200 frames | [link](https://github.com/zju3dv/ENeRF/blob/master/docs/enerf_outdoor.md) |
+| Neu3DV | Indoor | 18–21 Cams | 2704×2028 | 30 FPS | 6 | 10s/seq | [link](https://github.com/facebookresearch/Neural_3D_Video) |
+| Technicolor | Indoor (RGB-only) | 16 Cams | 2048×1088 | 25 FPS | 12 | - | [link](https://github.com/facebookresearch/hyperreel) |
+| NVIDIA Dynamic | Outdoor | 12 Cams | - | - | 7 | 90–200 frames | [link](https://gorokee.github.io/jsyoon/dynamic_synth/) |
+| Meeting Room | Indoor | 13 Cams | 1280×720 | 30 FPS | 3 | 300 frames | [link](https://universe.roboflow.com/meeting-room-object-detection/meeting-room-udkqe) |
+| Google Immersive | Indoor/Outdoor | ≤46 Cams | - | - | 15 | - | [link](https://github.com/augmentedperception/deepview_video_dataset) |
 
 ---
 
 ## Real-world: Long Horizon & Multimodal
 
-| Name | Scene Type | Sensor Setup | Resolution | Frame Rate | Scene/Seq | Temporal Scale |
-|:----:|:-----------:|:-------------:|:----------:|:----------:|:---------:|:--------------:|
-| Waymo Open | Autonomous Driving | 5 Cams + 5 LiDAR | 1920×1280 | 10 FPS | 1150 | ∼12M frames |
-| nuScenes | Autonomous Driving | 6 Cams + LiDAR | 1600×900 | 12 FPS | 1000 | ∼5.5h |
-| Argoverse 2 | Autonomous Driving | 7 Cams + LiDAR | 1920×1200 | 30 FPS | 1000 | ∼1000h |
-| PandaSet | Autonomous Driving | 6 Cams + LiDAR | 1920×1080 | 20 FPS | 103 | ∼1h |
-| OmniHD-Scenes | Autonomous Driving | 6C + LiDAR + 6R | Diverse | 15 FPS | 1501 | ∼30s/seq |
-| KITTI | Autonomous Driving | 2 Stereo + LiDAR | 1242×375 | 10 FPS | 22 | ∼6h |
-| WayveScenes101 | Autonomous Driving (RGB-only) | 5 Cams | - | 10 FPS | 101 | 20s/seq |
+| Name | Scene Type | Sensor Setup | Resolution | Frame Rate | Scene/Seq | Temporal Scale | Link |
+|:----:|:-----------:|:-------------:|:----------:|:----------:|:---------:|:--------------:|:--------------:|
+| Waymo Open | Autonomous Driving | 5 Cams + 5 LiDAR | 1920×1280 | 10 FPS | 1150 | ∼12M frames | [link](https://waymo.com/open/) |
+| nuScenes | Autonomous Driving | 6 Cams + LiDAR | 1600×900 | 12 FPS | 1000 | ∼5.5h | [link](https://www.nuscenes.org/) |
+| Argoverse 2 | Autonomous Driving | 7 Cams + LiDAR | 1920×1200 | 30 FPS | 1000 | ∼1000h | [link](https://www.argoverse.org/av2.html) |
+| PandaSet | Autonomous Driving | 6 Cams + LiDAR | 1920×1080 | 20 FPS | 103 | ∼1h | [link](https://www.kaggle.com/datasets/usharengaraju/pandaset-dataset) |
+| OmniHD-Scenes | Autonomous Driving | 6C + LiDAR + 6R | Diverse | 15 FPS | 1501 | ∼30s/seq | [link](https://github.com/TJRadarLab/OmniHD-Scenes) |
+| KITTI | Autonomous Driving | 2 Stereo + LiDAR | 1242×375 | 10 FPS | 22 | ∼6h | [link](https://docs.ultralytics.com/datasets/detect/kitti) |
+| WayveScenes101 | Autonomous Driving (RGB-only) | 5 Cams | - | 10 FPS | 101 | 20s/seq | [link](https://wayve.ai/science/wayvescenes101/) |
 
 
 
