@@ -1,8 +1,8 @@
 # Awesome-4D-Scene-Reconstruction
 
 [![Awesome Logo](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
-![Counter](https://api.infinitescript.com/badgen/count?name=hzxie/awesome/SceneGen)
-[![arXiv](https://img.shields.io/badge/arXiv-2505.05474-b31b1b.svg)](https://arxiv.org/abs/2505.05474)
+<!--![Counter](https://api.infinitescript.com/badgen/count?name=hzxie/awesome/SceneGen) -->
+<!--[![arXiv](https://img.shields.io/badge/arXiv-2505.05474-b31b1b.svg)](https://arxiv.org/abs/2505.05474)-->
 
 # Overview
 
