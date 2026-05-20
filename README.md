@@ -10,7 +10,7 @@ This repository collects summaries of over 100 recent studies on NeRF- or GS-bas
 
 If you have suggestions for new resources, improvements to methodologies, or corrections for broken links, please don't hesitate to open an [issue]([https://github.com/ZiyangYan/Awesome-4D-Scene-Reconstruction/issues]) or submit a [pull request](https://github.com/hzxie/Awesome-4D-Scene-Reconstruction/pulls). Contributions of all kinds are welcome and greatly appreciated.
 
-![4D-Scene-Reconstruction-Teaser](https://github.com/user-attachments/assets/4d_reconstruction_history.png)
+![4D-Scene-Reconstruction-Teaser](assets/4d_reconstruction_history.png)
 
 ### Table of Contents
 
