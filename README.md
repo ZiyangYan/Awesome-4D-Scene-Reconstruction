@@ -165,7 +165,8 @@ We categorize the different methods into **NeRF-style** and **GS-style** framewo
 
 ## Synthetic Datasets (Ground Truth Geometry/Motion)
 
-| Name | Scene Type | Sensor Setup | Resolution | Frame Rate  | Scene/Seq  | Temporal Scale |
+| Name | Scene Type | Sensor Setup | Resolution | Frame Rate  | Scene/Seq  | Temporal Scale|
+|------|-------|---------|---------|---------|-------------|-------------|
 |D-NeRF|Indoor|1 Cam | 800×800 |- |8| 50–200 frames|
 
 
