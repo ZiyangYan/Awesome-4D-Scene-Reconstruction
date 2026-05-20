@@ -45,7 +45,7 @@ We categorize the different methods into **NeRF-style** and **GS-style** framewo
 ### NeRF-based Reconstruction
 
 | Section | Method | Venue | Scenario | 4D-style | Scene Encoding | Geometry Representation | Text | Flow | Normal | Segment. | Uncer. | Extra Prior | Link |
-|---------|--------|-------|---------|----------|----------------|------------------------|------|------|--------|----------|--------|------------|------|
+|:---------:|:--------:|:-------:|:---------:|:----------:|:----------------:|:------------------------:|:------:|:------:|:--------:|:----------:|:--------:|:------------:|:------:|
 |         | D-NeRF | CVPR2021 | indoor | Deformation fields | MLP | density |  |  |  |  |  |  | [D-NeRF: Neural Radiance Fields for Dynamic Scenes](https://openaccess.thecvf.com/content/CVPR2021/papers/Li_Neural_Scene_Flow_Fields_for_Space-Time_View_Synthesis_of_Dynamic_CVPR_2021_paper.pdf) |
 |         | NSFF | CVPR2021 | outdoor | 4D NeRF | MLP | density |  | ✅ |  |  |  | RAFT | [NSFF Paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Li_Neural_Scene_Flow_Fields_for_Space-Time_View_Synthesis_of_Dynamic_CVPR_2021_paper.pdf) |
 |         | Video-NeRF | CVPR2021 | outdoor | 4D NeRF | MLP | density |  |  |  |  |  |  | [Video-NeRF Paper](https://openaccess.thecvf.com/content/CVPR2021/papers/Xian_Space-Time_Neural_Irradiance_Fields_for_Free-Viewpoint_Video_CVPR_2021_paper.pdf) |
@@ -97,7 +97,7 @@ We categorize the different methods into **NeRF-style** and **GS-style** framewo
 ### GS-based Reconstruction
 
 | Method | Venue | Scenario | 4D-style | Scene Encoding | Geometry Representation | Text | Flow | Normal | Segment. | Uncer. | Extra Prior | Link |
-|--------|-------|---------|----------|----------------|------------------------|------|------|--------|----------|--------|------------|------|
+|:--------:|:-------:|:---------:|:----------:|:----------------:|:------------------------:|:------:|:------:|:--------:|:----------:|:--------:|:------------:|:------:|
 | ST-4DGS         | ACM SIGGRAPH 2024 | in.&out. |                | Gaussian Splatting | Density |    |    |    |    |    |                     | [link](https://github.com/wanglids/ST-4DGS) |
 | SaRO-GS         | ACM MM2024      | indoor |                | Gaussian Splatting | Density |    |    |    |    |    |                     | [link](https://dl.acm.org/doi/pdf/10.1145/3664647.3681463) |
 | GaussianFlow     | CVPR2024       | indoor |                | Gaussian Splatting | Density |    | ✔  |    |    |    | Videoflow           | [link](https://zerg-overmind.github.io/GaussianFlow.github.io/) |
