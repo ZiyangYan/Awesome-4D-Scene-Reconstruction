@@ -168,23 +168,47 @@ We categorize the different methods into **NeRF-style** and **GS-style** framewo
 |  Name  | Scene Type | Sensor Setup | Resolution | Frame Rate | Scene/Seq | Temporal Scale |
 |:------:|:-----------:|:-------------:|:----------:|:----------:|:---------:|:--------------:|
 | D-NeRF | Indoor | 1 Cam | 800×800 | - | 8 | 50–200 frames |
+| ParticleNeRF | Indoor | 40 Cam | - | - | 6 | - |
+| SS3DM | Autonomous Driving | 6 Cams + 5 LiDAR | - | 10 FPS | 28 | 13K frames |
 
 
 ## Real-world: Monocular & Sparse View
 
-| Name | Scene Type | Sensor Setup | Resolution | Frame Rate  | Scene/Seq  | Temporal Scale |
-|------|-------|---------|---------|---------|-------------|-------------|
+| Name | Scene Type | Sensor Setup | Resolution | Frame Rate | Scene/Seq | Temporal Scale |
+|:----:|:-----------:|:-------------:|:----------:|:----------:|:---------:|:--------------:|
+| DAVIS | Outdoor | 1 Cam | - | - | 150 | 10k frames total |
+| HyperNeRF | Indoor/Outdoor | 1–2 Cams | 540×960 | 15 FPS | 17 | 8–15s/seq |
+| DyCheck | Indoor | 1 iPhone + 7 Static | - | - | 14 | 200–500 frames |
+| Stereo4D | Indoor/Outdoor | 2 Cams | Diverse | - | 200K clips | - |
+| NeRF-DS | Outdoor | 2 Cams | - | - | 8 | - |
 
+---
 
 ## Real-world: Dense Multi-view & Human-Centric
 
-| Name | Scene Type | Sensor Setup | Resolution | Frame Rate  | Scene/Seq  | Temporal Scale |
-|------|-------|---------|---------|---------|-------------|-------------|
+| Name | Scene Type | Sensor Setup | Resolution | Frame Rate | Scene/Seq | Temporal Scale |
+|:----:|:-----------:|:-------------:|:----------:|:----------:|:---------:|:--------------:|
+| Panoptic Studio | Indoor | 480 Cams | - | - | 5 | - |
+| ENeRF-Outdoor | Outdoor | 18 Cams | - | - | 3 | 1200 frames |
+| Neu3DV | Indoor | 18–21 Cams | 2704×2028 | 30 FPS | 6 | 10s/seq |
+| Technicolor | Indoor (RGB-only) | 16 Cams | 2048×1088 | 25 FPS | 12 | - |
+| NVIDIA Dynamic | Outdoor | 12 Cams | - | - | 7 | 90–200 frames |
+| Meeting Room | Indoor | 13 Cams | 1280×720 | 30 FPS | 3 | 300 frames |
+| Google Immersive | Indoor/Outdoor | ≤46 Cams | - | - | 15 | - |
+
+---
 
 ## Real-world: Long Horizon & Multimodal
 
-| Name | Scene Type | Sensor Setup | Resolution | Frame Rate  | Scene/Seq  | Temporal Scale |
-|------|-------|---------|---------|---------|-------------|-------------|
+| Name | Scene Type | Sensor Setup | Resolution | Frame Rate | Scene/Seq | Temporal Scale |
+|:----:|:-----------:|:-------------:|:----------:|:----------:|:---------:|:--------------:|
+| Waymo Open | Autonomous Driving | 5 Cams + 5 LiDAR | 1920×1280 | 10 FPS | 1150 | ∼12M frames |
+| nuScenes | Autonomous Driving | 6 Cams + LiDAR | 1600×900 | 12 FPS | 1000 | ∼5.5h |
+| Argoverse 2 | Autonomous Driving | 7 Cams + LiDAR | 1920×1200 | 30 FPS | 1000 | ∼1000h |
+| PandaSet | Autonomous Driving | 6 Cams + LiDAR | 1920×1080 | 20 FPS | 103 | ∼1h |
+| OmniHD-Scenes | Autonomous Driving | 6C + LiDAR + 6R | Diverse | 15 FPS | 1501 | ∼30s/seq |
+| KITTI | Autonomous Driving | 2 Stereo + LiDAR | 1242×375 | 10 FPS | 22 | ∼6h |
+| WayveScenes101 | Autonomous Driving (RGB-only) | 5 Cams | - | 10 FPS | 101 | 20s/seq |
 
 
 
