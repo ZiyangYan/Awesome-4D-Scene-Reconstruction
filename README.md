@@ -15,14 +15,15 @@ If you have suggestions for new resources, improvements to methodologies, or cor
 ### Table of Contents
 
 - [Methods: A Hierarchical Taxonomy](#methods-a-hierarchical-taxonomy)
-  - [4D Dynamic Scene Reconstruction System Overview]
-    - [Rule-based Generation]
-    - [Optimization-based Generation]
+  - [4D Dynamic Scene Reconstruction System Overview](#4d-dynamic-scene-reconstruction-system-overview)
+    - [NeRF-based Reconstruction](#nerf-based-reconstruction)
+    - [GS-based Reconstruction](#gs-based-reconstruction)
+
 - [Datasets](#datasets)
-    - [Synthetic Datasets (Ground Truth Geometry/Motion)]
-    - [Real-world: Monocular & Sparse View]
-    - [Real-world: Dense Multi-view & Human-Centric]
-    - [Real-world: Long Horizon & Multimodal]
+    - [Synthetic Datasets (Ground Truth GeometryMotion)](#synthetic-datasets-ground-truth-geometrymotion)
+    - [Real-world: Monocular & Sparse View](#real-world-monocular--sparse-view)
+    - [Real-world: Dense Multi-view & Human-Centric](#real-world-dense-multi-view--human-centric)
+    - [Real-world: Long Horizon & Multimodal](#real-world-long-horizon--multimodal)
 
 # Methods: A Hierarchical Taxonomy
 
