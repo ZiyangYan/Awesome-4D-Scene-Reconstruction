@@ -15,25 +15,14 @@ If you have suggestions for new resources, improvements to methodologies, or cor
 ### Table of Contents
 
 - [Methods: A Hierarchical Taxonomy](#methods-a-hierarchical-taxonomy)
-  - [Procedural Generation](#procedural-generation)
-    - [Rule-based Generation](#rule-based-generation)
-    - [Optimization-based Generation](#optimization-based-generation)
-    - [LLM-based Generation](#llm-based-generation)
-  - [Neural-3D Generation](#neural-3d-generation)
-    - [Scene Parameters](#scene-parameters)
-    - [Scene Graph](#scene-graph)
-    - [Semantic Layout](#semantic-layout)
-    - [Implicit Layout](#implicit-layout)
-  - [Image-based Generation](#image-based-generation)
-    - [Holistic Generation](#holistic-generation)
-    - [Iterative Generation](#iterative-generation)
-  - [Video-based Generation](#video-based-generation)
-    - [Two-stage Generation](#two-stage-generation)
-    - [One-stage Generation](#one-stage-generation)
+  - [4D Dynamic Scene Reconstruction System Overview]
+    - [Rule-based Generation]
+    - [Optimization-based Generation]
 - [Datasets](#datasets)
-    - [Indoor Datasets](#indoor-datasets)
-    - [Natural Datasets](#natural-datasets)
-    - [Urban Datasets](#urban-datasets)
+    - [Synthetic Datasets (Ground Truth Geometry/Motion)]
+    - [Real-world: Monocular & Sparse View]
+    - [Real-world: Dense Multi-view & Human-Centric]
+    - [Real-world: Long Horizon & Multimodal]
 
 # Methods: A Hierarchical Taxonomy
 
