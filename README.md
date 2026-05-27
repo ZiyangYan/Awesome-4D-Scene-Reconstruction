@@ -95,7 +95,7 @@ We categorize the different methods into **NeRF-style** and **GS-style** framewo
 | AYG             | CVPR2024       | indoor |                | Gaussian Splatting | Density | ✔  |    |    |    |    | Stable Diffusion & DM MVDream | [link](https://research.nvidia.com/labs/toronto-ai/AlignYourGaussians/) |
 | DeformGS        | CVPR2024       | indoor |                | Gaussian Splatting | Density |    |    |    |    |    |                     | [link](https://openaccess.thecvf.com/content/CVPR2024/papers/Yang_Deformable_3D_Gaussians_for_High-Fidelity_Monocular_Dynamic_Scene_Reconstruction_CVPR_2024_paper.pdf) |
 | SC-GS           | CVPR2024       | in.&out. |               | Gaussian Splatting | Density |    |    |    |    |    |                     | [link](https://yihua7.github.io/SC-GS-web/) |
-| 3DGStream       | CVPR2024       | indoor |                | Gaussian Splatting | Density |    |    |    |    |    |                     | 3DGStream |
+| 3DGStream       | CVPR2024       | indoor |                | Gaussian Splatting | Density |    |    |    |    |    |                     | [link](https://sjojok.top/3dgstream/) |
 | Deformable-3DGS | CVPR2024       | indoor |                | Gaussian Splatting | Density |    |    |    |    |    |                     | [link](https://github.com/ingra14m/Deformable-3D-Gaussians) |
 | GaGS            | CVPR2024       | in.&out. |               | Gaussian Splatting | Density |    |    |    |    |    |                     | [link](https://arxiv.org/pdf/2404.06270) |
 | DrivingGaussian | CVPR2024       | outdoor |               | Gaussian Splatting | Density |    |    |    |    |    |                     | [link](http://arxiv.org/abs/2312.07920) |
@@ -148,7 +148,6 @@ We categorize the different methods into **NeRF-style** and **GS-style** framewo
 | Shape of Motion  | ICCV2025   | outdoor |                | Gaussian Splatting | Density |    |    |    |    |    |                        | [link](https://arxiv.org/abs/2407.13764) |
 | MonoFusion       | ICCV2025   | indoor  |                | Gaussian Splatting | Density |    |    |    |    |    |                        | [link](https://arxiv.org/pdf/2507.23782) |
 | ADC-GS           | IJCAI2025   | in.&out.|                | Gaussian Splatting | Density |    |    |    |    |    |                        | [link](https://ijcai-preprints.s3.us-west-1.amazonaws.com/2025/1356.pdf) |
-| MAGS             | TCSVT2025  | indoor  |                | Gaussian Splatting | Density |    | ✔  |    | 
 
 
 # Datasets
